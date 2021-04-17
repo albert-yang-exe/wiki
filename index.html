@@ -1,1 +1,136 @@
+<head>
+<title>Wikipedia</title>
+<link rel="shortcut icon" type="image/png" href="favicon.png"/>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    #clock {
+      height: width/3;
+      width: 100%;
+      background-color: #789c34;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 50px;
+    }
+	
+	div.transbox {
+	  margin: 30px;
+	  background-color: #ffffff;
+	  border: 1px solid black;
+	  opacity: 0.6;
+	}
 
+	div.transbox p {
+	  margin: 5%;
+	  font-weight: bold;
+	  color: #000000;
+	}
+  </style>
+<style>
+div {background-color: Tomato;}
+div a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 18px;
+  display:inline-block;
+  ul li:hover {background: #fc8647;}
+  ul li:hover ul {display: block;}
+}
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+ul li {display: inline-block;}
+ul li:hover {background: #fc8647;}
+ul li:hover ul {display: block;}
+ul li ul {
+  position: absolute;
+  width: 200px;
+  display: none;
+}
+ul li ul li { 
+  background: #6bb56c; 
+  display: block; 
+}
+ul li ul li a {display:block !important;} 
+ul li ul li:hover {background: #6bb56c;}
+</style>
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+mark {
+  background-color: white;
+  color: black;
+}
+/* Style the header */
+header {
+  background-image: url("blogbackground.png");
+  background-size: cover;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  font-family:verdana
+  color: #FFFFFF;
+}
+
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: Tomato;
+  padding: 20px;
+  color: #FFFFFF;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 4;
+  -ms-flex: 4;
+  flex: 4;
+  background: #7494bc;
+  padding: 30px;
+  color: #FFFFFF;
+}
+
+
+/* Style the footer */
+footer {
+  background-color: Tomato;
+  padding: 6px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
